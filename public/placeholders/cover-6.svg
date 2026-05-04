@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A87600"/>
+      <stop offset="100%" stop-color="#FFC52E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g6)"/>
+  <rect x="-50" y="320" width="900" height="200" fill="#3D2817" opacity="0.15" transform="rotate(-6 400 420)"/>
+  <text x="400" y="240" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="64" font-weight="700" fill="#FFFAEC" opacity="0.95">效率工具</text>
+</svg>

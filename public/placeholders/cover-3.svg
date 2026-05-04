@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5B70F"/>
+      <stop offset="100%" stop-color="#A87600"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g3)"/>
+  <circle cx="700" cy="380" r="200" fill="#FFFAEC" opacity="0.25"/>
+  <circle cx="200" cy="100" r="80" fill="#FFFAEC" opacity="0.4"/>
+  <text x="400" y="240" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="64" font-weight="700" fill="#FFFAEC" opacity="0.95">实战案例</text>
+</svg>

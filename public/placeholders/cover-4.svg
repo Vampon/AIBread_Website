@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFAEC"/>
+      <stop offset="100%" stop-color="#FFD75E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g4)"/>
+  <path d="M0 350 Q200 280 400 320 T800 300 L800 450 L0 450 Z" fill="#F5B70F" opacity="0.45"/>
+  <text x="400" y="220" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="64" font-weight="700" fill="#3D2817" opacity="0.85">行业洞察</text>
+</svg>

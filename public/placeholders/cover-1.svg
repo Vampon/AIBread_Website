@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE388"/>
+      <stop offset="100%" stop-color="#F5B70F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g1)"/>
+  <circle cx="640" cy="120" r="160" fill="#FFFAEC" opacity="0.35"/>
+  <circle cx="160" cy="380" r="120" fill="#3D2817" opacity="0.08"/>
+  <text x="400" y="240" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="64" font-weight="700" fill="#3D2817" opacity="0.85">AI 工具</text>
+</svg>

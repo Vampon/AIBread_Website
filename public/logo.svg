@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="crust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD75E"/>
+      <stop offset="100%" stop-color="#F5B70F"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 30 Q10 14 32 14 Q54 14 54 30 L54 46 Q54 50 50 50 L14 50 Q10 50 10 46 Z" fill="url(#crust)" stroke="#3D2817" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M22 28 Q24 24 28 26" stroke="#3D2817" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M36 28 Q38 24 42 26" stroke="#3D2817" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M26 38 Q32 42 38 38" stroke="#3D2817" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+</svg>
