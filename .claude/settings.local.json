@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep -l \"commander\\\\|program\\\\|argv\")",
+      "Read(//c/Users/hp/AppData/Local/Temp/claude/D--Project-AIBread-Website/ada065f6-76a9-4b91-9074-60e0f6998899/tasks/**)",
+      "Bash(npm run *)",
+      "Bash(grep -E \"Ready|Compiled|error|Error\" \"C:\\\\\\\\Users\\\\\\\\hp\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\D--Project-AIBread-Website\\\\\\\\f5765b2c-3cc7-4d53-a111-725e5bb14579\\\\\\\\tasks\\\\\\\\brsjx352b.output\")",
+      "Bash(head -80 \"C:\\\\\\\\Users\\\\\\\\hp\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\D--Project-AIBread-Website\\\\\\\\f5765b2c-3cc7-4d53-a111-725e5bb14579\\\\\\\\tasks\\\\\\\\brsjx352b.output\")",
+      "Bash(curl *)",
+      "Bash(tail *)"
+    ]
+  }
+}

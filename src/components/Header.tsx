@@ -12,6 +12,7 @@ const navItems: NavItem[] = [
   { href: "/news", label: "AI 日刊" },
   { href: "/blog", label: "博客" },
   { href: "/learn", label: "学习路径" },
+  { href: "/cc", label: "Claude Code" },
   { href: "https://navigation.aibread.site/", label: "AI 导航", external: true },
   { href: "/about", label: "关于我" },
 ];
