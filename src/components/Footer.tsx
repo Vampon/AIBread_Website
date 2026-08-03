@@ -88,9 +88,21 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-bread-100 pt-6 text-xs text-bread-900/60 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} AI面包君 · 用 AI 烤出新鲜知识</p>
-          <p>本站内容仅代表个人观点，欢迎转发交流。</p>
+        <div className="mt-10 border-t border-bread-100 pt-6 text-xs text-bread-900/60">
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <p>© {new Date().getFullYear()} AI面包君 · 用 AI 烤出新鲜知识</p>
+            <p>本站内容仅代表个人观点，欢迎转发交流。</p>
+          </div>
+          <div className="mt-4 flex justify-center">
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-center transition-colors hover:text-bread-600 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bread-400 focus-visible:ring-offset-2"
+            >
+              豫ICP备2026009346号-1
+            </a>
+          </div>
         </div>
       </div>
     </footer>
