@@ -19,8 +19,16 @@ const config: Config = {
         },
       },
       fontFamily: {
+        display: [
+          "STSong",
+          "SimSun",
+          "ui-serif",
+          "serif",
+        ],
         sans: [
-          "var(--font-noto-sans-sc)",
+          "Microsoft YaHei",
+          "PingFang SC",
+          "Noto Sans CJK SC",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
@@ -33,6 +41,7 @@ const config: Config = {
       },
       boxShadow: {
         bread: "0 16px 40px rgba(245, 183, 15, 0.25)",
+        soft: "0 18px 60px rgba(61, 40, 23, 0.09)",
       },
     },
   },

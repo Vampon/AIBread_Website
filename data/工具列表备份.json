@@ -1,0 +1,1327 @@
+[
+    {
+        "id": "7129d28e-393e-489b-982c-715f1b25efdc",
+        "name": "Canva AI",
+        "description": "Canva集成的AI设计工具，支持智能设计、文案生成、图像编辑等功能，适合非专业设计师使用。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772247737229_Canva_AI.jpg",
+        "website_url": "https://www.canva.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T11:02:22.826226+08:00",
+        "updated_at": "2026-02-28T11:02:22.826226+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "d9f51a48-abfe-4409-b3ff-a2f0db841a70",
+                    "icon": "🎭",
+                    "name": "设计AI",
+                    "slug": "design-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "3d59c395-1548-41d9-8e4f-fb0e331ea7f6",
+        "name": "秒哒",
+        "description": "百度推出的无代码AI应用开发平台，支持通过自然语言快速构建应用，降低开发门槛，适合业务人员使用。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208829123___.png",
+        "website_url": "https://miaoda.baidu.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:13:53.955042+08:00",
+        "updated_at": "2026-02-28T00:13:53.955042+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+                    "icon": "🏢",
+                    "name": "编程AI",
+                    "slug": "code-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "9fb28ce9-4a90-4971-8ccb-80afde6654f0",
+        "name": "Trae",
+        "description": "字节跳动推出的AI编程IDE，国际版支持多种AI模型，提供免费使用方案，但在复杂场景下体验有待提升。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772247773975_Trae.png",
+        "website_url": "https://www.trae.ai/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:13:21.090812+08:00",
+        "updated_at": "2026-02-28T11:02:57.097946+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+                    "icon": "🏢",
+                    "name": "编程AI",
+                    "slug": "code-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "3f4cf497-b07c-44c4-8dfe-3b0dbb0b31c5",
+        "name": "海螺AI",
+        "description": "MiniMax旗下的AI视频生成平台，海螺AI的国际版，提供高质量视频生成服务，在海外市场有较高知名度。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208770954___AI.png",
+        "website_url": "https://hailuoai.video/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:12:54.698976+08:00",
+        "updated_at": "2026-02-28T00:12:54.698976+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "cf25631c-bdf8-45f1-8a4d-b02b0187a7b9",
+        "name": "CapCut",
+        "description": "字节跳动旗下的视频剪辑工具，集成AI字幕、特效、自动配音等功能，支持一键成片，是短视频创作的主流工具。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209272558_capcut.jpg",
+        "website_url": "https://www.capcut.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:12:16.139818+08:00",
+        "updated_at": "2026-02-28T00:21:16.145616+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "d75c368f-de94-4d37-90e8-34ce9d6d62b3",
+                    "icon": "💼",
+                    "name": "办公AI",
+                    "slug": "office-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": "d15432f3-295f-4035-b7f2-3fb3cdfc5cd7",
+        "name": "Dify",
+        "description": "开源的LLM应用开发平台，支持快速构建生成式AI应用，提供可视化Prompt编排、RAG、Agent等功能，是开发者构建AI应用的首选平台。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208695528_dify.png",
+        "website_url": "https://dify.ai/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:11:38.678956+08:00",
+        "updated_at": "2026-02-28T00:11:38.678956+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+                    "icon": "🤖",
+                    "name": "超级智能体",
+                    "slug": "super-agent",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "975df96b-81ad-445d-87f3-3e0de8747f5f",
+        "name": "Figma AI",
+        "description": "Figma集成的AI设计功能，支持智能布局、内容生成、设计建议等，是全球最流行的界面设计工具之一。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208663001_Figma_AI.png",
+        "website_url": "https://www.figma.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:11:07.134892+08:00",
+        "updated_at": "2026-02-28T00:11:07.134892+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "d9f51a48-abfe-4409-b3ff-a2f0db841a70",
+                    "icon": "🎭",
+                    "name": "设计AI",
+                    "slug": "design-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "766b6bce-ae89-45c3-87b9-30e34dfa9ede",
+        "name": "Vidu",
+        "description": "生数科技推出的AI视频生成工具，支持高分辨率视频生成，在动态一致性和画面质量方面表现优异，是国产视频生成的重要玩家。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209287625_Vidu.png",
+        "website_url": "https://www.vidu.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:10:15.977624+08:00",
+        "updated_at": "2026-02-28T00:21:29.628965+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "ed3e7d7b-b018-426d-85c8-dcf57fbc656d",
+        "name": "Nano Banana",
+        "description": "新兴的AI图像生成工具，专注于快速生成和风格化创作，支持多种艺术风格转换，适合社交媒体内容创作。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208561547_nanobanana.png",
+        "website_url": "https://nanobanana.ai/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:09:27.002954+08:00",
+        "updated_at": "2026-02-28T00:09:27.002954+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "17bb09b2-c087-47e4-ba67-1348e8b2aea2",
+        "name": "LiblibAI·哩布哩布AI",
+        "description": "国内领先的AI图像创作平台，基于Stable Diffusion生态，提供丰富的模型社区和在线生图服务，支持LoRA训练，是中文AI绘画社区的重要平台。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208507597_libulibu.png",
+        "website_url": "https://www.liblib.art/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:08:30.506931+08:00",
+        "updated_at": "2026-02-28T00:08:30.506931+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "6b48f8aa-504e-45a0-9e4f-6bf53978af31",
+        "name": "DALL-E 3",
+        "description": "OpenAI开发的AI图像生成工具，与ChatGPT深度集成，易用性强，支持自然语言直接改图，对英文生成支持很好，适合入门用户。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204396215_Chatgpt.png",
+        "website_url": "https://openai.com/dall-e-3",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-28T00:00:39.637713+08:00",
+        "updated_at": "2026-02-28T00:25:26.691274+08:00",
+        "category": null,
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "952453ea-1955-496f-a950-06cf4391ba1f",
+        "name": "Manus",
+        "description": "2025年新推出的AI智能体，支持自主任务执行和复杂工作流处理，是新兴的AI操作手册类工具。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772207405883_manus.png",
+        "website_url": "https://manus.im/",
+        "category_id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:48:15.129373+08:00",
+        "updated_at": "2026-02-27T23:50:10.680599+08:00",
+        "category": {
+            "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+            "icon": "🤖",
+            "name": "超级智能体",
+            "slug": "super-agent",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 4
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+                    "icon": "🤖",
+                    "name": "超级智能体",
+                    "slug": "super-agent",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "8edd0027-f87d-4be1-9647-e4bca5546cdc",
+        "name": "Suno",
+        "description": "AI音乐与音频生成工具，支持多种音乐风格的创作，能够生成完整的歌曲包括歌词和伴奏。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208055636_suno.png",
+        "website_url": "https://suno.com/",
+        "category_id": "c1882e60-ea43-4c0d-821f-c29f488dc3b2",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:47:29.294381+08:00",
+        "updated_at": "2026-02-28T00:00:57.802691+08:00",
+        "category": {
+            "id": "c1882e60-ea43-4c0d-821f-c29f488dc3b2",
+            "icon": "🎵",
+            "name": "音乐AI",
+            "slug": "music-ai",
+            "created_at": "2026-02-27T22:20:56.062086+08:00",
+            "sort_order": 0
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "c1882e60-ea43-4c0d-821f-c29f488dc3b2",
+                    "icon": "🎵",
+                    "name": "音乐AI",
+                    "slug": "music-ai",
+                    "created_at": "2026-02-27T22:20:56.062086+08:00",
+                    "sort_order": 0
+                }
+            }
+        ]
+    },
+    {
+        "id": "ce5a7e7f-a06e-4a8b-809d-6bf606984dc5",
+        "name": "AutoGPT",
+        "description": "开源自主AI智能体，能够自动分解任务、执行操作、调用工具，是早期AI Agent的代表项目。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209300773_AUTOGPT.jpg",
+        "website_url": "https://autogpt.net/",
+        "category_id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:46:59.048803+08:00",
+        "updated_at": "2026-02-28T00:21:42.73633+08:00",
+        "category": {
+            "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+            "icon": "🤖",
+            "name": "超级智能体",
+            "slug": "super-agent",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 4
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+                    "icon": "🤖",
+                    "name": "超级智能体",
+                    "slug": "super-agent",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "f1b018b4-8a6f-4369-b85b-01653c151ea5",
+        "name": "OpenClaw",
+        "description": "2026年现象级开源AI助手，首周获得15万Stars，支持真实任务执行，是开源社区最热门的AI智能体项目。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204079403_Openclaw.png",
+        "website_url": "https://openclaw.ai/",
+        "category_id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:46:25.790059+08:00",
+        "updated_at": "2026-02-28T11:04:02.050468+08:00",
+        "category": {
+            "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+            "icon": "🤖",
+            "name": "超级智能体",
+            "slug": "super-agent",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 4
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+                    "icon": "🤖",
+                    "name": "超级智能体",
+                    "slug": "super-agent",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 4
+                }
+            },
+            {
+                "category": {
+                    "id": "d639510e-d9d9-44cb-9e46-5da6577d97b9",
+                    "icon": "✨",
+                    "name": "新出AI",
+                    "slug": "new-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": "46288dba-6da7-49c2-a01e-2fb93b791d31",
+        "name": "扣子Coze",
+        "description": "字节跳动推出的AI Bot开发平台，支持定制客服机器人、知识问答系统，提供可视化工作流编排。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204251796___.png",
+        "website_url": "https://www.coze.com/",
+        "category_id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:45:56.389426+08:00",
+        "updated_at": "2026-02-27T22:57:33.900044+08:00",
+        "category": {
+            "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+            "icon": "🤖",
+            "name": "超级智能体",
+            "slug": "super-agent",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 4
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+                    "icon": "🤖",
+                    "name": "超级智能体",
+                    "slug": "super-agent",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "fd2c7149-3730-4581-9446-8d7009ee1dd5",
+        "name": "讯飞写作",
+        "description": "科大讯飞推出的AI写作工具，支持多种文体生成，在中文写作和语音输入方面有独特优势。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204277799_____.png",
+        "website_url": "https://huixie.iflyrec.com/",
+        "category_id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+        "is_hot": false,
+        "view_count": 2,
+        "created_at": "2026-02-27T22:45:20.673325+08:00",
+        "updated_at": "2026-02-27T23:50:36.861597+08:00",
+        "category": {
+            "id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+            "icon": "✍️",
+            "name": "写作AI",
+            "slug": "writing-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 7
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+                    "icon": "✍️",
+                    "name": "写作AI",
+                    "slug": "writing-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 7
+                }
+            }
+        ]
+    },
+    {
+        "id": "68b09b66-5890-46ff-a4e1-6058412d4c9b",
+        "name": "WPS AI",
+        "description": "金山办公推出的AI办公助手，集成在WPS Office中，支持文档生成、数据分析、PPT制作等功能，适合中文办公场景。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208078279_WPS.png",
+        "website_url": "ai.wps.cn/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:44:32.166712+08:00",
+        "updated_at": "2026-02-28T00:01:20.558444+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "0cf6b1f4-f594-4966-8fec-6fbe24dd0305",
+        "name": "Cursor",
+        "description": "AI原生IDE，支持多模型接入，提供自然语言编程能力，适合快速原型开发和全栈项目构建，是2025年最受欢迎的AI编程工具之一。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208088524_cursor.png",
+        "website_url": "https://cursor.sh/",
+        "category_id": "d75c368f-de94-4d37-90e8-34ce9d6d62b3",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:43:45.98437+08:00",
+        "updated_at": "2026-02-28T11:04:18.501572+08:00",
+        "category": {
+            "id": "d75c368f-de94-4d37-90e8-34ce9d6d62b3",
+            "icon": "💼",
+            "name": "办公AI",
+            "slug": "office-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 10
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+                    "icon": "🏢",
+                    "name": "编程AI",
+                    "slug": "code-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "8fc5def0-81b3-47db-b01f-83f556436e04",
+        "name": "Veo3",
+        "description": "Google推出的高分辨率AI视频生成模型，在专业级视频创作方面表现优异，目前处于预览阶段。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209414120_veo3.png",
+        "website_url": "https://ai.google.dev/veo",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": false,
+        "view_count": 1,
+        "created_at": "2026-02-27T22:42:50.723141+08:00",
+        "updated_at": "2026-02-28T13:39:05.350324+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "137413d3-7eab-472d-a918-e7ec2c5e9929",
+        "name": "Luma",
+        "description": "AI视频生成工具，在风格化动画和摄影机控制方面表现突出，是目前该领域的第一梯队工具。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209503379_LUMA.jpg",
+        "website_url": "https://lumalabs.ai/",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:42:20.625515+08:00",
+        "updated_at": "2026-02-28T00:25:05.473784+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "a3205f8b-a7ac-4963-b0ea-f50ee2566451",
+        "name": "Runway",
+        "description": "专业级AI视频编辑工具，Gen-3版本支持4K输出、绿幕替换、运动追踪等功能，提供完整的专业工作流，适合影视后期制作。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208110079_runway.png",
+        "website_url": "https://runwayml.com/",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:41:54.086191+08:00",
+        "updated_at": "2026-02-28T00:01:51.977002+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "588a849a-5160-4c8b-9600-a38aff8b2849",
+        "name": "即梦AI",
+        "description": "字节跳动旗下的AI图像生成工具，支持中文文字生成，融合ControlNet等功能，支持轮廓参考、骨骼参考、边缘参考等，效果优异。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204287815___AI.png",
+        "website_url": "https://jimeng.jianying.com/",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:40:52.976675+08:00",
+        "updated_at": "2026-02-27T23:27:19.86582+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            },
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "8040f537-d2f3-4eba-8847-b7b2392a65fe",
+        "name": "可灵Kling",
+        "description": "快手推出的AI视频生成工具，支持文生视频、图生视频，画面稳定，物理效果逼真，支持2分钟视频生成，是写实风格视频的第一梯队工具。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204308894___.png",
+        "website_url": "https://klingai.com/",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": true,
+        "view_count": 1,
+        "created_at": "2026-02-27T22:39:10.160249+08:00",
+        "updated_at": "2026-02-28T13:39:20.963422+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            },
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "b5459243-703d-4790-8e73-2c32a4688f79",
+        "name": "通义千问",
+        "description": "阿里云推出的AI助手，拥有强大的语义理解能力，已接入阿里巴巴内部应用如钉钉、天猫精灵等，提供智能问答、文本摘要、实时语音转文字等功能。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204317462_____.png",
+        "website_url": "https://tongyi.aliyun.com/qianwen/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:38:21.415756+08:00",
+        "updated_at": "2026-02-28T00:27:53.411659+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "96730aaa-5fe1-41cf-aeb3-f1593d287b9b",
+        "name": "元宝",
+        "description": "腾讯旗下后来居上的AI应用，支持生成图片、信息搜索、对话、文档总结等功能，也可创建智能体进行个性化交互。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204354320___.png",
+        "website_url": "https://yuanbao.tencent.com/",
+        "category_id": null,
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:36:43.786974+08:00",
+        "updated_at": "2026-02-27T22:59:16.230356+08:00",
+        "category": null,
+        "ai_tool_categories": []
+    },
+    {
+        "id": "d68652d7-8576-4676-b03d-07b14d2b7541",
+        "name": "腾讯混元",
+        "description": "腾讯推出的多功能AI助手，具备强大的中文理解和生成能力，支持多轮对话、内容创作、知识问答等功能，与腾讯生态深度整合。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209544906___.png",
+        "website_url": "https://hunyuan.tencent.com/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:36:19.552685+08:00",
+        "updated_at": "2026-02-28T00:25:48.167343+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "27786428-9a35-4c54-a6c2-26e197dfd6b6",
+        "name": "豆包",
+        "description": "字节跳动旗下的AI助手，在多模态处理和移动端体验方面具有优势，支持AI搜索、图像生成编辑、学术搜索、音乐生成等功能，与抖音生态深度结合。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204362086___.png",
+        "website_url": "https://www.doubao.com/chat/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": true,
+        "view_count": 1,
+        "created_at": "2026-02-27T22:35:41.66944+08:00",
+        "updated_at": "2026-02-28T13:39:13.167495+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "8dcbc46a-23d9-4408-b21d-ebfa01e39b93",
+        "name": "文心一言",
+        "description": "百度推出的AI助手，在中文理解和处理方面表现优异，覆盖诗歌创作、广告文案、技术文档等多个领域，具备文学创作、知识问答、图像理解生成等核心功能。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204369956_____.png",
+        "website_url": "https://yiyan.baidu.com/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:35:15.807156+08:00",
+        "updated_at": "2026-02-27T22:59:31.881374+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "74fae977-1824-4eae-be7b-931aed58dc0b",
+        "name": "智谱清言",
+        "description": "北京智谱华章科技开发的大语言模型，GLM-5版本在开源编程领域达到SOTA水平，提供全面的自然语言处理服务，支持图像生成、智能对话、长文本解读等功能。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204376904_____.png",
+        "website_url": "https://chatglm.cn/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:33:50.477283+08:00",
+        "updated_at": "2026-02-27T22:59:39.231943+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "2f6228d8-ed9f-4678-9f6a-b5e62b18b9c4",
+        "name": "DeepSeek",
+        "description": "深度求索开发的AI助手，V3.1/V4版本支持百万上下文，开源免费，在逻辑推理和代码生成方面表现优异，被称为国产之光。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204386159_Deepseek.png",
+        "website_url": "https://chat.deepseek.com/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-27T22:33:02.021114+08:00",
+        "updated_at": "2026-02-28T11:04:39.722639+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "ba185420-c2cf-42de-b790-d1fad9bc898f",
+        "name": "Kimi",
+        "description": "Kimi是北京月之暗面科技有限公司于2023年10月9日推出的智能助手，专注于长文本处理领域，是全球首个支持输入20万汉字的AI产品，具备长文总结、联网搜索、数据处理、代码编写等核心功能，主要应用于学术论文翻译、法律问题分析和API文档理解等场景。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772073752152_kimi.png",
+        "website_url": "https://www.kimi.com/",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-26T10:42:49.339731+08:00",
+        "updated_at": "2026-02-26T10:42:49.339731+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "d26e0d14-d019-4040-ae11-bbf3e8d7ce98",
+        "name": "Claude",
+        "description": "Anthropic开发的先进AI助手，注重安全性和可靠性。Claude 4 Sonnet在代码生成领域表现卓越，是前端代码生成审美最好的大模型，支持工具调用和MCP应用开发。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209428203_claude.png",
+        "website_url": "https://claude.ai",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": true,
+        "view_count": 1,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T00:27:12.765241+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "0bb4649e-ed7d-4f35-95e6-c9e6742cb688",
+        "name": "Sora",
+        "description": "OpenAI推出的文本生成视频模型，2.0版本支持10分钟3D长视频生成，具备分镜表功能，支持多种风格，代表行业最高水准。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772208136901_Sora.png",
+        "website_url": "https://openai.com/sora",
+        "category_id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T11:03:41.228424+08:00",
+        "category": {
+            "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+            "icon": "🎬",
+            "name": "视频AI",
+            "slug": "video-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 13
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+                    "icon": "🎬",
+                    "name": "视频AI",
+                    "slug": "video-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "e85c0d2d-f737-41fe-a676-7a009d12245a",
+        "name": "Midjourney",
+        "description": "全球领先的AI图像生成工具，以极高的画面精细度、光感和艺术表达著称，支持多种艺术风格，是专业创作者和设计师的首选工具。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204420662_midjourney.png",
+        "website_url": "https://midjourney.com",
+        "category_id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T00:28:10.474178+08:00",
+        "category": {
+            "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+            "icon": "🎨",
+            "name": "图像AI",
+            "slug": "image-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 8
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "f6bfbf40-4898-4484-91e4-48ef7b4b35bb",
+        "name": "ChatGPT",
+        "description": "OpenAI开发的AI对话工具标杆产品，拥有超过1.8亿月活跃用户，是全球使用最广泛的AI生产力工具。支持自然语言对话、代码生成、文档分析、创意写作等功能，GPT-4版本具备强大的逻辑推理能力。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204396215_Chatgpt.png",
+        "website_url": "https://chat.openai.com",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-27T23:30:22.664309+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "5e64bf54-7ffa-4d30-ac2b-169bebd0ccbd",
+                    "icon": "🔥",
+                    "name": "大热门AI",
+                    "slug": "hot-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 1
+                }
+            },
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "2c8c4e96-2d2f-420b-beff-8ea5e6993a2a",
+        "name": "Stable Diffusion",
+        "description": "最强大的开源图像生成工具，支持本地部署，模型生态丰富，可控性强，支持海量插件，适合开发者和专业用户。",
+        "icon_url": "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_411cb909-804c-4842-ad9a-d08f040f9be9.jpg",
+        "website_url": "https://stability.ai",
+        "category_id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T00:27:25.145023+08:00",
+        "category": {
+            "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+            "icon": "🎨",
+            "name": "图像AI",
+            "slug": "image-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 8
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+                    "icon": "🎨",
+                    "name": "图像AI",
+                    "slug": "image-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "fcf1cf1c-84f5-4352-af33-40a22d8402d9",
+        "name": "Notion AI",
+        "description": "Notion集成的AI写作助手，支持自动摘要、内容生成、翻译等功能，与知识库管理深度结合，适合团队协作。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772204406334_NotionAI.png",
+        "website_url": "https://notion.so",
+        "category_id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-27T23:00:08.420287+08:00",
+        "category": {
+            "id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+            "icon": "✍️",
+            "name": "写作AI",
+            "slug": "writing-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 7
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+                    "icon": "✍️",
+                    "name": "写作AI",
+                    "slug": "writing-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 7
+                }
+            }
+        ]
+    },
+    {
+        "id": "f015fb49-87f4-4e3d-9385-411f4ecdd245",
+        "name": "Gemini",
+        "description": "Google开发的AI助手，Gemini 3 Pro版本在多模态处理和性价比方面表现突出，支持文本、图像、视频等多种输入格式，具备强大的语义理解能力。",
+        "icon_url": "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_8699384a-84ed-4092-9a38-8b4e59e87642.jpg",
+        "website_url": "https://gemini.google.com",
+        "category_id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "is_hot": true,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T00:26:19.251688+08:00",
+        "category": {
+            "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+            "icon": "💬",
+            "name": "对话AI",
+            "slug": "chat-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 11
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+                    "icon": "⭐",
+                    "name": "TOP 10",
+                    "slug": "top-10",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 2
+                }
+            },
+            {
+                "category": {
+                    "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+                    "icon": "💬",
+                    "name": "对话AI",
+                    "slug": "chat-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "46adfe9b-56bf-46b4-96cf-7771415d9c52",
+        "name": "Copilot",
+        "description": "GitHub推出的AI编程助手，IDE插件形态，与开发环境深度整合，支持多种编程语言，是生态整合的王者。",
+        "icon_url": "https://backend.appmiaoda.com/projects/supabase284891170281144320/storage/v1/object/public/ai-tools-icons/1772209465601_copilot.png",
+        "website_url": "https://copilot.microsoft.com",
+        "category_id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+        "is_hot": false,
+        "view_count": 0,
+        "created_at": "2026-02-25T12:24:34.530991+08:00",
+        "updated_at": "2026-02-28T11:03:49.90045+08:00",
+        "category": {
+            "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+            "icon": "🏢",
+            "name": "编程AI",
+            "slug": "code-ai",
+            "created_at": "2026-02-25T12:24:34.530991+08:00",
+            "sort_order": 6
+        },
+        "ai_tool_categories": [
+            {
+                "category": {
+                    "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+                    "icon": "🏢",
+                    "name": "编程AI",
+                    "slug": "code-ai",
+                    "created_at": "2026-02-25T12:24:34.530991+08:00",
+                    "sort_order": 6
+                }
+            }
+        ]
+    }
+]

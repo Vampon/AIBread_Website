@@ -1,131 +1,120 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpen,
+  Clock3,
+  Compass,
+  FileText,
+  FolderOpen,
+  Gamepad2,
+  Newspaper,
+  Sparkles,
+  Terminal,
+} from "lucide-react";
 import { Hero } from "@/components/Hero";
-import { StatCard } from "@/components/StatCard";
-import { ArticleCard } from "@/components/ArticleCard";
-import { TopicCard } from "@/components/TopicCard";
-import { SectionTitle } from "@/components/SectionTitle";
+import { ArticleListItem } from "@/components/ArticleListItem";
 import { getAllArticles } from "@/lib/articles";
-import { topics } from "@/data/topics";
 import { matrixStats } from "@/data/matrix";
+import { getProjects } from "@/lib/projects";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
   const articles = getAllArticles();
-  const latest = articles.slice(0, 4);
+  const latest = articles.slice(0, 3);
+  const projects = await getProjects();
+  const workItems = projects.slice(0, 4).map((project) => ({
+    ...project,
+    icon: project.href === "/cc" ? Terminal : project.category === "工具" ? Compass : Gamepad2,
+  }));
+
+  const quickLinks = [
+    { href: "/work", icon: FolderOpen, label: "作品", value: `${projects.length} 项`, hint: "工具、网站与互动内容" },
+    { href: "/blog", icon: FileText, label: "博客", value: `${articles.length} 篇`, hint: "实践记录与方法整理" },
+    { href: "/resources", icon: BookOpen, label: "学习资源", value: `${matrixStats.totalNodes} 关`, hint: "课程、练习与资料" },
+    { href: "/news", icon: Newspaper, label: "AI 消息站", value: "每日", hint: "筛过一遍的行业动态" },
+  ];
 
   return (
     <>
       <Hero />
 
-      <section className="container-page -mt-6 md:-mt-10">
-        <div className="grid gap-4 md:grid-cols-3">
-          <StatCard
-            value="每周"
-            label="更新节奏"
-            hint="1–2 篇新内容，不刷屏"
-          />
-          <StatCard
-            value={`${articles.length}`}
-            label="原创文章"
-            hint="每周持续更新"
-          />
-          <StatCard
-            value={`${matrixStats.totalNodes}`}
-            label="学习关卡"
-            hint={`横跨 ${matrixStats.chapters} 个章节`}
-          />
+      <section className="border-b border-bread-900/10 bg-white/45">
+        <div className="container-page grid divide-y divide-bread-900/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
+          {quickLinks.map((item) => {
+            const Icon = item.icon;
+            return (
+              <Link key={item.href} href={item.href} className="group flex items-center gap-3 px-1 py-4 sm:px-5 lg:px-6">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-bread-100 text-bread-700 transition-colors group-hover:bg-bread-500 group-hover:text-bread-900"><Icon className="h-4 w-4" /></span>
+                <span className="min-w-0 flex-1"><span className="flex items-baseline justify-between gap-2"><strong className="text-sm text-bread-900">{item.label}</strong><b className="font-mono text-[10px] font-medium text-bread-700">{item.value}</b></span><small className="mt-0.5 block truncate text-[11px] text-bread-900/45">{item.hint}</small></span>
+                <ArrowRight className="h-3.5 w-3.5 text-bread-900/25 transition-transform group-hover:translate-x-1 group-hover:text-bread-700" />
+              </Link>
+            );
+          })}
         </div>
       </section>
 
-      <section className="container-page mt-24">
-        <SectionTitle
-          eyebrow="最新文章"
-          title="新鲜出炉"
-          description="每周更新。看完就能上手用，不讲玄学，不堆术语。"
-          moreHref="/blog"
-        />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {latest.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
+      <section className="container-page mt-16 md:mt-20">
+        <div className="flex flex-col gap-4 border-b border-bread-900/10 pb-5 md:flex-row md:items-end md:justify-between">
+          <div><p className="eyebrow">Selected work</p><h2 className="display-title mt-3 text-3xl md:text-4xl">最近做好的东西</h2></div>
+          <div className="flex items-center gap-5"><p className="hidden max-w-md text-sm leading-6 text-bread-900/55 md:block">能直接体验，也能顺着卡片查看制作笔记。</p><Link href="/work" className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-bread-900 hover:text-bread-600">全部作品 <ArrowRight className="h-4 w-4" /></Link></div>
+        </div>
+        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {workItems.map((item, index) => {
+            const Icon = item.icon;
+            const dark = index === 0;
+            return (
+              <Link key={item.id} href="/work" className={`group relative flex min-h-[230px] flex-col overflow-hidden rounded-2xl border p-5 transition-all hover:-translate-y-1 hover:shadow-soft ${dark ? "border-bread-900 bg-bread-900 text-white" : "border-bread-900/10 bg-white/90"}`}>
+                <div className="flex items-start justify-between"><span className={`flex h-9 w-9 items-center justify-center rounded-xl ${dark ? "bg-white/10 text-bread-300" : "bg-bread-100 text-bread-700"}`}><Icon className="h-4 w-4" /></span><span className={`rounded-full px-2.5 py-1 text-[9px] font-bold ${dark ? "bg-white/10 text-white/65" : "bg-bread-50 text-bread-900/45"}`}>{item.status}</span></div>
+                <div className="mt-auto pt-8"><p className={`text-[10px] font-bold ${dark ? "text-bread-300" : "text-bread-700"}`}>{item.category}</p><h3 className={`mt-1.5 font-display text-xl ${dark ? "text-white" : "text-bread-900"}`}>{item.title}</h3><p className={`mt-2 line-clamp-2 pr-5 text-xs leading-5 ${dark ? "text-white/55" : "text-bread-900/52"}`}>{item.description}</p></div>
+                <ArrowRight className={`absolute bottom-5 right-5 h-4 w-4 transition-transform group-hover:translate-x-1 ${dark ? "text-white/55" : "text-bread-700"}`} />
+              </Link>
+            );
+          })}
         </div>
       </section>
 
-      <section className="container-page mt-24">
-        <SectionTitle
-          eyebrow="精选专题"
-          title="按主题深度啃"
-          description="不知道从哪开始？挑一个主题，跟着系列学。"
-        />
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {topics.map((topic) => (
-            <TopicCard key={topic.slug} topic={topic} />
-          ))}
-        </div>
-      </section>
-
-      <section className="container-page mt-24">
-        <Link
-          href="/learn"
-          className="group relative block overflow-hidden rounded-3xl border border-bread-200 bg-gradient-to-br from-bread-100 via-bread-50 to-white p-10 transition-all hover:-translate-y-1 hover:shadow-bread md:p-14"
-        >
-          <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <span className="inline-block rounded-full bg-bread-500 px-3 py-1 text-xs font-medium text-white">
-                闯关学习
-              </span>
-              <h2 className="mt-4 text-3xl font-bold tracking-tight text-bread-900 md:text-4xl">
-                AI 学习路径
-                <br />
-                像玩游戏一样升级
-              </h2>
-              <p className="mt-4 max-w-md text-base leading-relaxed text-bread-900/70">
-                把 AI 知识切成 {matrixStats.totalNodes} 个小关卡，从「认识 AI」到「把 AI
-                用进工作」。每关 5–10 分钟，一步一个脚印。
-              </p>
-              <div className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-bread-700">
-                进入学习地图
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </div>
+      <section className="container-page mt-16 md:mt-20">
+        <div className="grid gap-5 lg:grid-cols-[1.04fr_.96fr]">
+          <div className="dense-panel overflow-hidden">
+            <div className="flex items-end justify-between border-b border-bread-900/10 bg-bread-100/55 px-6 py-5">
+              <div><p className="page-kicker">Learning shelf</p><h2 className="mt-2 text-2xl font-bold text-bread-900">学习资源</h2></div>
+              <Link href="/resources" className="inline-flex items-center gap-1 text-xs font-bold text-bread-900">查看全部 <ArrowRight className="h-3.5 w-3.5" /></Link>
             </div>
-            <div className="grid grid-cols-5 gap-2">
-              {Array.from({ length: 20 }).map((_, i) => (
-                <div
-                  key={i}
-                  className={`aspect-square rounded-lg border ${
-                    i < 5
-                      ? "border-bread-300 bg-white"
-                      : "border-dashed border-bread-200 bg-bread-50/60"
-                  }`}
-                />
-              ))}
+            <div className="divide-y divide-bread-900/10">
+              <Link href="/learn" className="group grid gap-4 p-6 transition-colors hover:bg-bread-50 sm:grid-cols-[44px_1fr_auto] sm:items-center">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-bread-500 text-bread-900"><BookOpen className="h-5 w-5" /></span>
+                <span><span className="flex items-center gap-2"><strong className="text-base text-bread-900">AI 闯关地图</strong><b className="rounded-full bg-bread-100 px-2 py-0.5 text-[9px] text-bread-700">推荐起点</b></span><small className="mt-1 block text-xs leading-5 text-bread-900/50">{matrixStats.totalNodes} 个互动关卡，每次学一个小概念。</small></span>
+                <span className="hidden items-center gap-1 text-xs font-bold text-bread-900 sm:inline-flex">开始闯关 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" /></span>
+              </Link>
+              <Link href="/cc" className="group grid gap-4 p-6 transition-colors hover:bg-bread-50 sm:grid-cols-[44px_1fr_auto] sm:items-center">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-bread-900 text-bread-300"><Terminal className="h-5 w-5" /></span>
+                <span><strong className="text-base text-bread-900">Claude Code 实验室</strong><small className="mt-1 block text-xs leading-5 text-bread-900/50">在仿真终端里边操作，边看懂工具调用。</small></span>
+                <span className="hidden items-center gap-1 text-xs font-bold text-bread-900 sm:inline-flex">进入实验室 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" /></span>
+              </Link>
+            </div>
+            <div className="grid gap-px border-t border-bread-900/10 bg-bread-900/10 sm:grid-cols-3">
+              {["AI 工具实战", "提示词案例", "工作流小课"].map((item) => <div key={item} className="flex items-center justify-between bg-white px-5 py-4"><span className="text-xs font-bold text-bread-900/70">{item}</span><span className="text-[9px] text-bread-900/35">准备中</span></div>)}
             </div>
           </div>
-        </Link>
+
+          <div className="dense-panel p-5 md:p-6">
+            <div className="flex items-end justify-between border-b border-bread-900/10 pb-4"><div><p className="page-kicker">Fresh notes</p><h2 className="mt-2 text-2xl font-bold text-bread-900">最近更新</h2></div><Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-bread-900">更多文章 <ArrowRight className="h-3.5 w-3.5" /></Link></div>
+            <div className="mt-4 space-y-2">{latest.map((article) => <ArticleListItem key={article.slug} article={article} compact />)}</div>
+          </div>
+        </div>
       </section>
 
-      <section className="container-page mt-24 mb-12">
-        <div className="grid gap-8 rounded-3xl border border-bread-100 bg-white p-10 md:grid-cols-[auto_1fr] md:items-center md:p-14">
-          <div className="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-bread-300 to-bread-500 text-6xl shadow-bread">
-            🍞
+      <section className="container-page mb-6 mt-16 md:mt-20">
+        <div className="relative overflow-hidden rounded-2xl bg-bread-900 px-6 py-8 text-white md:px-9 md:py-9">
+          <Sparkles className="absolute -right-8 -top-12 h-48 w-48 rotate-12 text-bread-500/10" />
+          <div className="relative grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+            <div><p className="text-[10px] font-bold uppercase tracking-[0.18em] text-bread-300">What I can help with</p><h2 className="mt-3 font-display text-3xl leading-tight">把一个想法，做成能用的东西。</h2><p className="mt-3 max-w-xl text-sm leading-6 text-white/55">这里先展示我的实践。有具体问题，也可以一起聊聊。</p></div>
+            <div className="grid gap-2 sm:grid-cols-3">
+              {[{ icon: Compass, title: "整理思路", text: "把需求和信息排清楚" }, { icon: Terminal, title: "做成产品", text: "网站、工具与交互内容" }, { icon: BookOpen, title: "讲明白", text: "课程、教程与案例拆解" }].map((item) => { const Icon = item.icon; return <div key={item.title} className="rounded-xl border border-white/10 bg-white/[.06] p-4"><Icon className="h-4 w-4 text-bread-300" /><p className="mt-5 text-sm font-bold">{item.title}</p><p className="mt-1 text-[11px] leading-5 text-white/45">{item.text}</p></div>; })}
+            </div>
           </div>
-          <div>
-            <h2 className="text-2xl font-bold text-bread-900 md:text-3xl">
-              你好，我是面包君
-            </h2>
-            <p className="mt-3 max-w-2xl text-base leading-relaxed text-bread-900/70">
-              一个把 AI 嚼碎了、烤香了再喂给你的内容创作者。
-              在 AI 行业摸爬滚打多年，相信好的知识应该像面包一样：松软、好嚼、人人吃得起。
-              如果这里的内容帮到你，记得在评论区告诉我下一篇想看什么。
-            </p>
-            <Link
-              href="/about"
-              className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-bread-700 transition-colors hover:text-bread-500"
-            >
-              更多关于我
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
+          <div className="relative mt-6 flex flex-wrap items-center gap-4 border-t border-white/10 pt-5"><Link href="/about#contact" className="inline-flex items-center gap-2 rounded-full bg-bread-500 px-5 py-2.5 text-xs font-bold text-bread-900">和我聊聊 <ArrowRight className="h-3.5 w-3.5" /></Link><span className="inline-flex items-center gap-1.5 text-[11px] text-white/40"><Clock3 className="h-3.5 w-3.5" /> 网站和内容都在持续更新</span></div>
         </div>
       </section>
     </>

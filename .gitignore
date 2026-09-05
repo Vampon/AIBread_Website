@@ -1,7 +1,10 @@
 node_modules
 .next
+.next-stale
 out
 .env*.local
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+data/*.db
+data/*.db-*

@@ -3,8 +3,8 @@ import { NewsItemCard } from "@/components/NewsItemCard";
 import type { NewsItem } from "@/lib/news/types";
 
 export const metadata = {
-  title: "AI 日刊 — AI面包君",
-  description: "每日聚合各大 AI 信息源的热点。一键直达原文。",
+  title: "AI 消息站",
+  description: "每日聚合值得关注的 AI 动态，附简明导读，一键直达原文。",
 };
 
 export const revalidate = 86_400;
@@ -43,44 +43,36 @@ export default async function NewsPage() {
 
   return (
     <>
-      <section className="container-page pt-16 pb-2 md:pt-20">
-        <div className="max-w-3xl">
-          <span className="inline-block rounded-full bg-bread-100 px-3 py-1 text-xs font-medium text-bread-700">
-            AI 日刊 · DAILY
-          </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-bread-900 md:text-5xl">
-            今日 AI 热点
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-bread-900/70 md:text-lg">
-            自动聚合 Anthropic / OpenAI / Hugging Face / 机器之心 / 量子位等信息源，每日一更。点标题直达原文。
-          </p>
-          <p className="mt-3 text-xs text-bread-900/50">
+      <section className="container-page">
+        <div className="page-intro">
+          <div><p className="eyebrow">AI signal station</p><h1 className="display-title mt-4 text-4xl md:text-6xl">今天的 AI 消息</h1></div>
+          <div><p className="text-sm leading-7 text-bread-900/62">聚合 Anthropic、OpenAI、Hugging Face、机器之心、量子位等信息源，每天更新。</p><p className="mt-3 text-xs text-bread-900/45">
             更新于 {updated.toLocaleString("zh-CN", { hour12: false })}
             {bundle.failedSources.length > 0 && (
               <span className="ml-2 text-bread-700/70">
                 · 部分源暂不可达：{bundle.failedSources.join("、")}
               </span>
             )}
-          </p>
+          </p></div>
         </div>
       </section>
 
-      <section className="container-page mt-10 pb-20">
+      <section className="container-page mt-7 pb-16">
         {groups.length === 0 ? (
           <p className="py-20 text-center text-bread-900/50">
             还没拉到内容——刚部署的话稍等几分钟，cron 跑过一轮就会有了。
           </p>
         ) : (
-          <div className="space-y-12">
+          <div className="space-y-9">
             {groups.map(([day, items]) => (
               <div key={day}>
-                <h2 className="mb-4 flex items-baseline gap-3 text-xl font-bold text-bread-900">
+                <h2 className="mb-5 flex items-baseline gap-3 border-b border-bread-900/10 pb-3 font-display text-2xl font-bold text-bread-900">
                   <span>{friendlyDay(day)}</span>
                   <span className="text-sm font-normal text-bread-900/50">
                     {items.length} 条
                   </span>
                 </h2>
-                <div className="grid gap-4 md:grid-cols-2">
+                <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
                   {items.map((item) => (
                     <NewsItemCard key={item.id} item={item} />
                   ))}

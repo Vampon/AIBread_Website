@@ -3,16 +3,21 @@ import { PlayerCard } from "@/components/PlayerCard";
 import { DailyQuest } from "@/components/DailyQuest";
 import { AchievementStrip } from "@/components/AchievementStrip";
 import { chapters, matrixStats, accentClasses } from "@/data/matrix";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
+
+export const metadata = {
+  title: "AI 闯关地图",
+  description: "43 个互动小关卡，从认识 AI 到把 AI 用进工作。",
+};
 
 export default function LearnPage() {
   return (
     <>
-      <section className="container-page pt-12 pb-6 md:pt-16">
+      <section className="container-page pt-12 pb-8 md:pt-16">
         <div className="max-w-3xl">
-          <span className="inline-block rounded-full bg-bread-100 px-3 py-1 text-xs font-medium text-bread-700">
-            学习地图 · LEARN
-          </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-bread-900 md:text-5xl">
+          <Link href="/resources" className="inline-flex items-center gap-1 text-xs font-bold text-bread-700 hover:text-bread-900">学习资源 <ChevronRight className="h-3.5 w-3.5" /> AI 闯关地图</Link>
+          <h1 className="display-title mt-5 text-4xl md:text-6xl">
             像玩游戏一样学 AI
           </h1>
           <p className="mt-4 text-base leading-relaxed text-bread-900/70 md:text-lg">

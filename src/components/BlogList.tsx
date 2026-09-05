@@ -1,161 +1,47 @@
 "use client";
 
-import { useState, useMemo, useDeferredValue, useEffect } from "react";
-import { Search, X, LayoutGrid, List } from "lucide-react";
-import { ArticleCard } from "@/components/ArticleCard";
+import { useDeferredValue, useMemo, useState } from "react";
+import { Search, X } from "lucide-react";
 import { ArticleListItem } from "@/components/ArticleListItem";
 import type { Article } from "@/lib/articles";
 
-type ViewMode = "card" | "list";
-const VIEW_STORAGE_KEY = "aibread.blog.view";
-
-export function BlogList({
-  articles,
-  tags,
-}: {
-  articles: Article[];
-  tags: string[];
-}) {
-  const [activeTag, setActiveTag] = useState<string>("全部");
+export function BlogList({ articles, tags }: { articles: Article[]; tags: string[] }) {
+  const [activeTag, setActiveTag] = useState("全部");
   const [query, setQuery] = useState("");
-  const [view, setView] = useState<ViewMode>("card");
   const deferred = useDeferredValue(query);
-
-  useEffect(() => {
-    const saved = window.localStorage.getItem(VIEW_STORAGE_KEY);
-    if (saved === "card" || saved === "list") setView(saved);
-  }, []);
-
-  const updateView = (next: ViewMode) => {
-    setView(next);
-    window.localStorage.setItem(VIEW_STORAGE_KEY, next);
-  };
-
+  const counts = useMemo(() => Object.fromEntries(tags.map((tag) => [tag, tag === "全部" ? articles.length : articles.filter((article) => article.tag === tag).length])), [articles, tags]);
   const filtered = useMemo(() => {
-    let list = articles;
-    if (activeTag !== "全部") {
-      list = list.filter((a) => a.tag === activeTag);
-    }
     const q = deferred.trim().toLowerCase();
-    if (q) {
-      list = list.filter(
-        (a) =>
-          a.title.toLowerCase().includes(q) ||
-          a.excerpt.toLowerCase().includes(q) ||
-          a.tag.toLowerCase().includes(q)
-      );
-    }
-    return list;
+    return articles.filter((article) => (activeTag === "全部" || article.tag === activeTag) && (!q || article.title.toLowerCase().includes(q) || article.excerpt.toLowerCase().includes(q) || article.tag.toLowerCase().includes(q)));
   }, [articles, activeTag, deferred]);
 
   return (
-    <>
-      <div className="container-page">
-        <div className="mt-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => {
-              const active = tag === activeTag;
-              return (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => setActiveTag(tag)}
-                  className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-all ${
-                    active
-                      ? "border-bread-500 bg-bread-500 text-white shadow-sm"
-                      : "border-bread-200 bg-white text-bread-900/70 hover:border-bread-400 hover:text-bread-900"
-                  }`}
-                >
-                  {tag}
-                </button>
-              );
-            })}
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="relative w-full lg:w-72">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-bread-900/40" />
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="搜文章标题、摘要、标签…"
-                className="w-full rounded-full border border-bread-200 bg-white py-2 pl-9 pr-9 text-sm outline-none transition-colors placeholder:text-bread-900/40 focus:border-bread-500"
-              />
-              {query && (
-                <button
-                  type="button"
-                  onClick={() => setQuery("")}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full p-1 text-bread-900/40 hover:bg-bread-50 hover:text-bread-700"
-                  aria-label="清空搜索"
-                >
-                  <X className="h-3.5 w-3.5" />
-                </button>
-              )}
-            </div>
-            <div
-              role="group"
-              aria-label="切换视图"
-              className="flex shrink-0 items-center rounded-full border border-bread-200 bg-white p-0.5"
-            >
-              <button
-                type="button"
-                onClick={() => updateView("card")}
-                aria-pressed={view === "card"}
-                aria-label="卡片视图"
-                title="卡片视图"
-                className={`flex h-8 w-9 items-center justify-center rounded-full transition-colors ${
-                  view === "card"
-                    ? "bg-bread-500 text-white shadow-sm"
-                    : "text-bread-900/60 hover:text-bread-900"
-                }`}
-              >
-                <LayoutGrid className="h-4 w-4" />
+    <section className="container-page mt-7 pb-10">
+      <div className="grid gap-7 lg:grid-cols-[210px_1fr] lg:gap-9">
+        <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-bread-900/40">Browse by topic</p>
+          <div className="mt-4 flex gap-2 overflow-x-auto pb-2 lg:block lg:space-y-1 lg:overflow-visible">
+            {tags.map((tag) => (
+              <button key={tag} type="button" onClick={() => setActiveTag(tag)} aria-pressed={activeTag === tag} className={`flex shrink-0 items-center justify-between gap-5 rounded-xl px-4 py-2.5 text-left text-sm transition-all lg:w-full ${activeTag === tag ? "bg-bread-900 font-bold text-white" : "text-bread-900/60 hover:bg-white hover:text-bread-900"}`}>
+                <span>{tag}</span><span className={`font-mono text-[10px] ${activeTag === tag ? "text-white/45" : "text-bread-900/35"}`}>{String(counts[tag]).padStart(2, "0")}</span>
               </button>
-              <button
-                type="button"
-                onClick={() => updateView("list")}
-                aria-pressed={view === "list"}
-                aria-label="列表视图"
-                title="列表视图"
-                className={`flex h-8 w-9 items-center justify-center rounded-full transition-colors ${
-                  view === "list"
-                    ? "bg-bread-500 text-white shadow-sm"
-                    : "text-bread-900/60 hover:text-bread-900"
-                }`}
-              >
-                <List className="h-4 w-4" />
-              </button>
-            </div>
+            ))}
           </div>
+          <div className="mt-6 hidden rounded-xl border border-bread-900/10 bg-bread-100/55 p-4 lg:block"><p className="text-xs font-bold text-bread-900">内容正在搬家</p><p className="mt-2 text-[11px] leading-5 text-bread-900/55">公众号和小红书的精选内容，会陆续整理到这里。</p></div>
+        </aside>
+
+        <div className="min-w-0">
+          <div className="flex flex-col gap-4 border-b border-bread-900/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
+            <div><h2 className="text-xl font-bold text-bread-900">{activeTag === "全部" ? "全部文章" : activeTag}</h2><p className="mt-1 text-xs text-bread-900/45">共 {filtered.length} 篇，按发布时间排序</p></div>
+            <label className="relative block w-full sm:w-72">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-bread-900/35" />
+              <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索标题或关键词" className="w-full rounded-full border border-bread-900/10 bg-white py-2.5 pl-10 pr-10 text-sm text-bread-900 outline-none placeholder:text-bread-900/35 focus:border-bread-500" />
+              {query && <button type="button" onClick={() => setQuery("")} aria-label="清空搜索" className="absolute right-3 top-1/2 -translate-y-1/2 text-bread-900/35 hover:text-bread-900"><X className="h-4 w-4" /></button>}
+            </label>
+          </div>
+          {filtered.length > 0 ? <div className="mt-5 grid gap-3 xl:grid-cols-2">{filtered.map((article) => <ArticleListItem key={article.slug} article={article} compact />)}</div> : <div className="surface-card mt-6 py-20 text-center"><p className="font-display text-2xl text-bread-900">这里还没有内容</p><p className="mt-2 text-sm text-bread-900/45">换个分类或关键词再试试。</p></div>}
         </div>
-
-        {query && (
-          <p className="mt-3 text-xs text-bread-900/60">
-            搜索 <span className="font-mono text-bread-700">"{query}"</span>，
-            找到 {filtered.length} 篇
-          </p>
-        )}
       </div>
-
-      <section className="container-page mt-8 pb-16">
-        {filtered.length === 0 ? (
-          <p className="py-20 text-center text-bread-900/50">
-            没有匹配的文章。换个关键词或分类试试?
-          </p>
-        ) : view === "card" ? (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
-          </div>
-        ) : (
-          <div className="mx-auto flex max-w-4xl flex-col gap-4">
-            {filtered.map((article) => (
-              <ArticleListItem key={article.slug} article={article} />
-            ))}
-          </div>
-        )}
-      </section>
-    </>
+    </section>
   );
 }

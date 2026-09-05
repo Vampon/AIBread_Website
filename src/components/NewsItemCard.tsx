@@ -17,7 +17,7 @@ export function NewsItemCard({ item }: { item: NewsItem }) {
       href={item.url}
       target="_blank"
       rel="noreferrer"
-      className="group flex flex-col gap-2 rounded-2xl border border-bread-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-bread-300 hover:shadow-lg"
+      className="group flex flex-col gap-2 rounded-xl border border-bread-900/10 bg-white/85 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-bread-400 hover:bg-white hover:shadow-soft"
     >
       <div className="flex flex-wrap items-center gap-2 text-xs text-bread-900/60">
         <span className="rounded-full bg-bread-100 px-2.5 py-0.5 font-medium text-bread-700">
@@ -30,11 +30,11 @@ export function NewsItemCard({ item }: { item: NewsItem }) {
           </span>
         )}
       </div>
-      <h3 className="text-base font-bold leading-snug text-bread-900 transition-colors group-hover:text-bread-600 md:text-lg">
+      <h3 className="font-display text-base font-bold leading-snug text-bread-900 transition-colors group-hover:text-bread-600">
         {item.title}
       </h3>
       {item.summary ? (
-        <div className="mt-1 rounded-xl bg-bread-50 px-3 py-2 text-sm leading-relaxed text-bread-900/80">
+        <div className="mt-1 rounded-lg bg-bread-50 px-3 py-2 text-xs leading-6 text-bread-900/75">
           <span className="mb-1 inline-flex items-center gap-1 text-xs font-medium text-bread-700">
             <Sparkles className="h-3 w-3" /> AI 导读
           </span>

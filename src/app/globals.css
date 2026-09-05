@@ -10,6 +10,18 @@
   }
   body {
     @apply bg-bread-50 text-bread-900 antialiased;
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(255, 227, 136, 0.22), transparent 28rem),
+      linear-gradient(rgba(61, 40, 23, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(61, 40, 23, 0.025) 1px, transparent 1px);
+    background-size: auto, 32px 32px, 32px 32px;
+    background-attachment: fixed;
+  }
+  ::selection {
+    @apply bg-bread-300 text-bread-900;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-bread-500 ring-offset-2 ring-offset-bread-50;
   }
 }
 
@@ -85,6 +97,28 @@
   .article-prose hr {
     @apply my-10 border-t border-bread-100;
   }
+  .surface-card {
+    @apply rounded-2xl border border-bread-900/10 bg-white/90 shadow-soft backdrop-blur-sm;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-bread-700;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-7 bg-bread-500;
+  }
+  .display-title {
+    @apply font-display font-bold leading-[1.1] tracking-[-0.035em] text-bread-900;
+  }
+  .page-intro {
+    @apply grid gap-5 border-b border-bread-900/10 pb-8 pt-10 md:pt-14 lg:grid-cols-[1fr_.62fr] lg:items-end;
+  }
+  .page-kicker {
+    @apply text-[10px] font-bold uppercase tracking-[0.18em] text-bread-700;
+  }
+  .dense-panel {
+    @apply rounded-2xl border border-bread-900/10 bg-white/90;
+  }
 }
 
 @layer utilities {
@@ -103,4 +137,22 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+}
+
+@keyframes bread-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-9px) rotate(1deg); }
+}
+
+@keyframes bread-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-bread-float { animation: bread-float 5s ease-in-out infinite; }
+.animate-bread-rise { animation: bread-rise .7s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-bread-float, .animate-bread-rise { animation: none; }
 }

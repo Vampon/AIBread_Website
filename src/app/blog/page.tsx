@@ -2,7 +2,7 @@ import { BlogList } from "@/components/BlogList";
 import { getAllArticles, getAllTags } from "@/lib/articles";
 
 export const metadata = {
-  title: "博客 — AI面包君",
+  title: "博客",
   description: "AI 工具评测、提示词技巧、真实使用案例。每周更新 1–2 篇，不水文，不刷屏。",
 };
 
@@ -12,16 +12,14 @@ export default function BlogPage() {
 
   return (
     <>
-      <section className="container-page pt-16 pb-2 md:pt-20">
-        <div className="max-w-3xl">
-          <span className="inline-block rounded-full bg-bread-100 px-3 py-1 text-xs font-medium text-bread-700">
-            博客 · BLOG
-          </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-bread-900 md:text-5xl">
-            新鲜出炉的 AI 笔记
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-bread-900/70 md:text-lg">
-            工具评测、提示词技巧、真实使用案例。每周更新 1–2 篇，不水文，不刷屏。
+      <section className="container-page">
+        <div className="page-intro">
+          <div>
+            <p className="eyebrow">Notes & stories</p>
+            <h1 className="display-title mt-4 text-4xl md:text-6xl">文章与笔记</h1>
+          </div>
+          <p className="max-w-lg text-sm leading-7 text-bread-900/62">
+            AI 工具、提示词、Claude Code 和实际使用记录。可以按分类找，也可以直接搜关键词。
           </p>
         </div>
       </section>

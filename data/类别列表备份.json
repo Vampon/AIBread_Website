@@ -1,0 +1,114 @@
+[
+    {
+        "id": "c1882e60-ea43-4c0d-821f-c29f488dc3b2",
+        "name": "音乐AI",
+        "slug": "music-ai",
+        "icon": "🎵",
+        "sort_order": 0,
+        "created_at": "2026-02-27T22:20:56.062086+08:00"
+    },
+    {
+        "id": "5e64bf54-7ffa-4d30-ac2b-169bebd0ccbd",
+        "name": "大热门AI",
+        "slug": "hot-ai",
+        "icon": "🔥",
+        "sort_order": 1,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "cb680778-8d80-4ab2-8af5-d3de3d212e5f",
+        "name": "TOP 10",
+        "slug": "top-10",
+        "icon": "⭐",
+        "sort_order": 2,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "903b4375-a6c6-4089-b9c2-718aef19ae58",
+        "name": "AI操作手册",
+        "slug": "ai-manual",
+        "icon": "📖",
+        "sort_order": 3,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "4f98a3e8-68f3-41b5-b8d9-716d3adcd513",
+        "name": "超级智能体",
+        "slug": "super-agent",
+        "icon": "🤖",
+        "sort_order": 4,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "d639510e-d9d9-44cb-9e46-5da6577d97b9",
+        "name": "新出AI",
+        "slug": "new-ai",
+        "icon": "✨",
+        "sort_order": 5,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "69ce7e0c-e058-4353-a2a2-38cc8e4b5bad",
+        "name": "编程AI",
+        "slug": "code-ai",
+        "icon": "🏢",
+        "sort_order": 6,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "053d84cc-da0a-49a5-ba6c-17865beedecd",
+        "name": "写作AI",
+        "slug": "writing-ai",
+        "icon": "✍️",
+        "sort_order": 7,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "175feb8a-7e98-43ee-bf1d-ad8b559c6f4d",
+        "name": "图像AI",
+        "slug": "image-ai",
+        "icon": "🎨",
+        "sort_order": 8,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "d9f51a48-abfe-4409-b3ff-a2f0db841a70",
+        "name": "设计AI",
+        "slug": "design-ai",
+        "icon": "🎭",
+        "sort_order": 9,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "d75c368f-de94-4d37-90e8-34ce9d6d62b3",
+        "name": "办公AI",
+        "slug": "office-ai",
+        "icon": "💼",
+        "sort_order": 10,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "5dc6df8d-fa10-47bb-931d-183c4cf54157",
+        "name": "对话AI",
+        "slug": "chat-ai",
+        "icon": "💬",
+        "sort_order": 11,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "f6b30970-a6db-4d62-a669-d1b1f774624b",
+        "name": "视频AI",
+        "slug": "video-ai",
+        "icon": "🎬",
+        "sort_order": 13,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    },
+    {
+        "id": "39e477ff-cc53-408a-ac4f-21b56a18cabc",
+        "name": "收藏",
+        "slug": "favorites",
+        "icon": "⭐",
+        "sort_order": 14,
+        "created_at": "2026-02-25T12:24:34.530991+08:00"
+    }
+]

@@ -1,108 +1,45 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { ArrowUpRight } from "lucide-react";
 
-type FooterLink = { label: string; href: string; external?: boolean };
-type FooterCol = { title: string; links: FooterLink[] };
-
-const cols: FooterCol[] = [
-  {
-    title: "内容",
-    links: [
-      { label: "首页", href: "/" },
-      { label: "AI 日刊", href: "/news" },
-      { label: "博客文章", href: "/blog" },
-      { label: "学习路径", href: "/learn" },
-      { label: "关于我", href: "/about" },
-    ],
-  },
-  {
-    title: "找到我",
-    links: [
-      { label: "B 站", href: "https://space.bilibili.com/3546609602267766", external: true },
-      { label: "抖音", href: "https://www.douyin.com/user/MS4wLjABAAAA4XP2qKiH8LOaG5jjuincgnenQisFQHlya2mnl_vjIx8", external: true },
-      { label: "小红书", href: "https://www.xiaohongshu.com/user/profile/6953b65a0000000037009210", external: true },
-      { label: "公众号", href: "/about#wechat-qr" },
-    ],
-  },
-  {
-    title: "相关产品",
-    links: [
-      { label: "AI 导航站", href: "https://navigation.aibread.site/", external: true },
-      { label: "RSS 订阅", href: "/feed.xml" },
-      { label: "关于我", href: "/about" },
-    ],
-  },
+const links = [
+  { label: "作品", href: "/work" },
+  { label: "博客", href: "/blog" },
+  { label: "AI 消息站", href: "/news" },
+  { label: "学习资源", href: "/resources" },
+  { label: "关于我", href: "/about" },
 ];
 
 export function Footer() {
   const pathname = usePathname();
-  // 关卡页有自己的底部进度栏，全站 Footer 在那儿会与之打架，所以隐藏
-  if (pathname?.startsWith("/learn/") && pathname !== "/learn") {
-    return null;
-  }
+  if (pathname?.startsWith("/learn/") && pathname !== "/learn") return null;
+  if (pathname?.startsWith("/blog/")) return null;
+
   return (
-    <footer className="mt-24 border-t border-bread-100 bg-white">
-      <div className="container-page py-12">
-        <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+    <footer className="mt-20 border-t border-bread-900/10 bg-bread-900 text-white">
+      <div className="container-page py-12 md:py-16">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-end">
           <div>
-            <div className="flex items-center gap-2 text-lg font-bold text-bread-900">
-              <span>🍞</span>
-              <span>AI面包君</span>
+            <div className="flex items-center gap-3">
+              <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white"><Image src="/logo.svg" alt="" width={33} height={33} /></span>
+              <span className="text-lg font-bold">AI面包君</span>
             </div>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-bread-900/70">
-              给普通人讲明白 AI。每周更新工具评测、提示词技巧、真实使用案例。
-            </p>
+            <p className="mt-6 max-w-xl font-display text-2xl leading-relaxed text-white md:text-3xl">把复杂的 AI 烤得松软一点，<br />让每个人都能咬下第一口。</p>
           </div>
-
-          {cols.map((col) => (
-            <div key={col.title}>
-              <h4 className="text-sm font-semibold text-bread-900">
-                {col.title}
-              </h4>
-              <ul className="mt-3 space-y-2 text-sm text-bread-900/70">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    {link.external ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="transition-colors hover:text-bread-600"
-                      >
-                        {link.label}
-                      </a>
-                    ) : (
-                      <Link
-                        href={link.href}
-                        className="transition-colors hover:text-bread-600"
-                      >
-                        {link.label}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="lg:text-right">
+            <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/65 lg:justify-end">
+              {links.map((link) => <Link key={link.href} href={link.href} className="hover:text-white">{link.label}</Link>)}
+              <a href="https://navigation.aibread.site/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">AI 导航 <ArrowUpRight className="h-3.5 w-3.5" /></a>
+            </nav>
+            <p className="mt-6 text-xs leading-relaxed text-white/45">个人探索、真实实践与持续更新。本站内容仅代表个人观点。</p>
+          </div>
         </div>
-
-        <div className="mt-10 border-t border-bread-100 pt-6 text-xs text-bread-900/60">
-          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-            <p>© {new Date().getFullYear()} AI面包君 · 用 AI 烤出新鲜知识</p>
-            <p>本站内容仅代表个人观点，欢迎转发交流。</p>
-          </div>
-          <div className="mt-4 flex justify-center">
-            <a
-              href="https://beian.miit.gov.cn/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-center transition-colors hover:text-bread-600 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bread-400 focus-visible:ring-offset-2"
-            >
-              豫ICP备2026009346号-1
-            </a>
-          </div>
+        <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} AI面包君 · Built with curiosity</p>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" className="hover:text-white">豫ICP备2026009346号-1</a>
         </div>
       </div>
     </footer>

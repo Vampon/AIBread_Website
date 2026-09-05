@@ -13,9 +13,9 @@ export async function generateMetadata({
 }) {
   const { levelId } = await params;
   const level = getLevel(levelId);
-  if (!level) return { title: "找不到这一关 — AI面包君" };
+  if (!level) return { title: "找不到这一关" };
   return {
-    title: `${level.emoji} ${level.title} — AI面包君`,
+    title: `${level.emoji} ${level.title}`,
     description: `学习路径 · ${level.id} · 约 ${level.estimatedMin} 分钟`,
   };
 }
