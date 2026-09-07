@@ -4,6 +4,9 @@ export type NewsSource = {
   url: string;
   category: "official" | "media" | "community" | "domestic";
   lang: "zh" | "en";
+  kind?: "rss" | "jiqizhixin-api" | "wordpress-api";
+  keywords?: string[];
+  maxItems?: number;
 };
 
 export type NewsItem = {

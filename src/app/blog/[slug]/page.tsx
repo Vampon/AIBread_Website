@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
-import { getAllArticles, getArticleBySlug, extractToc } from "@/lib/articles";
+import { getArticleBySlug, extractToc, getRegularArticles } from "@/lib/articles";
 import { ArticleBody } from "@/components/ArticleBody";
 import { BlogReaderSidebar } from "@/components/BlogReaderSidebar";
 import { TocSidebar } from "@/components/TocSidebar";
+import { breadChapterPath } from "@/lib/bread-series";
 
-export function generateStaticParams() { return getAllArticles().map((article) => ({ slug: article.slug })); }
+export function generateStaticParams() { return getRegularArticles().map((article) => ({ slug: article.slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -19,8 +20,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) notFound();
+  if (article.kind === "tutorial") redirect(breadChapterPath(article.slug));
 
-  const all = getAllArticles();
+  const all = getRegularArticles();
   const toc = extractToc(article.content);
   const index = all.findIndex((item) => item.slug === article.slug);
   const previous = index > 0 ? all[index - 1] : null;
@@ -50,7 +52,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       </article>
 
-      <aside className="hidden h-[calc(100vh-64px)] border-l border-bread-900/10 bg-white/55 px-5 py-7 xl:sticky xl:top-16 xl:block xl:overflow-y-auto"><TocSidebar items={toc} /></aside>
+      <aside className="hidden h-[calc(100vh-64px)] min-w-0 overflow-x-hidden border-l border-bread-900/10 bg-white/55 px-5 py-7 xl:sticky xl:top-16 xl:block xl:overflow-y-auto"><TocSidebar items={toc} /></aside>
     </div>
   );
 }

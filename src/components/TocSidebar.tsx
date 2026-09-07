@@ -44,11 +44,11 @@ export function TocSidebar({ items }: { items: Item[] }) {
   if (items.length === 0) return null;
 
   return (
-    <nav aria-label="目录" className="text-xs">
+    <nav aria-label="目录" className="min-w-0 overflow-hidden text-xs">
       <div className="mb-4 font-bold text-bread-900">
         文章大纲
       </div>
-      <ul className="space-y-1 border-l border-bread-900/10 pl-3">
+      <ul className="min-w-0 space-y-1 border-l border-bread-900/10 pl-3">
         {items.map((it) => {
           const active = it.id === activeId;
           return (
@@ -58,7 +58,7 @@ export function TocSidebar({ items }: { items: Item[] }) {
             >
               <a
                 href={`#${it.id}`}
-                className={`block rounded-md px-2 py-1.5 leading-5 transition-colors ${
+                className={`block min-w-0 break-words rounded-md px-2 py-1.5 leading-5 transition-colors ${
                   active
                     ? "bg-bread-100 font-bold text-bread-700"
                     : "text-bread-900/48 hover:bg-bread-50 hover:text-bread-700"

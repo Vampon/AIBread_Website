@@ -1,13 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
 
 const mainNav = [
   { href: "/work", label: "作品" },
+  { href: "/ai-learn", label: "AI 学习" },
   { href: "/blog", label: "博客" },
   { href: "/news", label: "AI 消息站" },
 ];
@@ -20,9 +21,19 @@ const resourceNav = [
 
 export function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const resourcesActive = ["/resources", "/learn", "/cc"].some((path) => pathname.startsWith(path));
   const activeClass = (href: string) => pathname === href || (href !== "/" && pathname.startsWith(href)) ? "text-bread-900" : "text-bread-900/62 hover:text-bread-900";
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      ["/work", "/ai-learn", "/blog", "/news", "/resources", "/about"].forEach((href) => router.prefetch(href));
+    }, 350);
+    return () => window.clearTimeout(timer);
+  }, [router]);
+
+  if (pathname === "/") return null;
 
   return (
     <header className="sticky top-0 z-50 border-b border-bread-900/10 bg-bread-50/90 backdrop-blur-xl">
@@ -37,8 +48,8 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium lg:flex" aria-label="主导航">
-          {mainNav.map((item) => <Link key={item.href} href={item.href} className={`transition-colors ${activeClass(item.href)}`}>{item.label}</Link>)}
+        <nav className="hidden items-center gap-6 text-sm font-medium lg:flex" aria-label="主导航">
+          {mainNav.map((item) => <Link key={item.href} href={item.href} prefetch className={`transition-colors ${activeClass(item.href)}`}>{item.label}</Link>)}
           <div className="group relative py-6">
             <Link href="/resources" className={`flex items-center gap-1 transition-colors ${resourcesActive ? "text-bread-900" : "text-bread-900/62 group-hover:text-bread-900"}`}>
               学习资源 <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />

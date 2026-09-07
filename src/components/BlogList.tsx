@@ -16,7 +16,8 @@ export function BlogList({ articles, tags }: { articles: Article[]; tags: string
   }, [articles, activeTag, deferred]);
 
   return (
-    <section className="container-page mt-7 pb-10">
+    <section className="container-page mt-8 pb-10" aria-labelledby="article-library-title">
+      <h2 id="article-library-title" className="sr-only">文章列表</h2>
       <div className="grid gap-7 lg:grid-cols-[210px_1fr] lg:gap-9">
         <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-bread-900/40">Browse by topic</p>
@@ -27,7 +28,7 @@ export function BlogList({ articles, tags }: { articles: Article[]; tags: string
               </button>
             ))}
           </div>
-          <div className="mt-6 hidden rounded-xl border border-bread-900/10 bg-bread-100/55 p-4 lg:block"><p className="text-xs font-bold text-bread-900">内容正在搬家</p><p className="mt-2 text-[11px] leading-5 text-bread-900/55">公众号和小红书的精选内容，会陆续整理到这里。</p></div>
+          <div className="mt-6 hidden rounded-xl border border-bread-900/10 bg-bread-100/55 p-4 lg:block"><p className="text-xs font-bold text-bread-900">公众号文章归档</p><p className="mt-2 text-[11px] leading-5 text-bread-900/55">先整理了一批值得长期保留的内容，之后还会继续补充。</p></div>
         </aside>
 
         <div className="min-w-0">

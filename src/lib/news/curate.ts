@@ -20,9 +20,25 @@ const dedupe = (items: NewsItem[]) => {
 const sortByDateDesc = (items: NewsItem[]) =>
   [...items].sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
+const capPerSource = (items: NewsItem[], cap: number) => {
+  const counts = new Map<string, number>();
+  return items.filter((item) => {
+    const count = counts.get(item.sourceId) ?? 0;
+    if (count >= cap) return false;
+    counts.set(item.sourceId, count + 1);
+    return true;
+  });
+};
+
 async function buildBundle(): Promise<NewsBundle> {
   const { items, failedSources } = await fetchAllNews();
-  let curated = sortByDateDesc(dedupe(items)).slice(0, 40);
+  const sorted = sortByDateDesc(dedupe(items));
+  const chinese = capPerSource(sorted.filter((item) => item.lang === "zh"), 12).slice(0, 36);
+  const officialOriginals = capPerSource(
+    sorted.filter((item) => item.lang === "en"),
+    4,
+  ).slice(0, 12);
+  let curated = [...chinese, ...officialOriginals];
   curated = await aiCurator(curated);
   return {
     generatedAt: new Date().toISOString(),

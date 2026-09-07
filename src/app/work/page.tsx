@@ -2,7 +2,7 @@ import { WorkGallery } from "@/components/WorkGallery";
 import { getProjects } from "@/lib/projects";
 
 export const metadata = { title: "作品", description: "AI面包君做过的 AI 工具、互动课程与小游戏。" };
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function WorkPage() {
   const projects = await getProjects();

@@ -10,6 +10,16 @@ export type ArticleFrontmatter = {
   date: string;
   cover: string;
   readMin: number;
+  kind?: "article" | "tutorial";
+  series?: string;
+  seriesSlug?: string;
+  course?: string;
+  courseSlug?: string;
+  courseOrder?: number;
+  chapter?: number;
+  seriesOrder?: number;
+  difficulty?: number;
+  codeLines?: number;
 };
 
 export type Article = ArticleFrontmatter & {
@@ -41,6 +51,16 @@ export function getAllArticles(): Article[] {
       date: fm.date ?? "1970-01-01",
       cover: fm.cover ?? "/placeholders/cover-1.svg",
       readMin: fm.readMin ?? Math.max(2, Math.round(parsed.content.length / 700)),
+      kind: fm.kind ?? "article",
+      series: fm.series,
+      seriesSlug: fm.seriesSlug,
+      course: fm.course,
+      courseSlug: fm.courseSlug,
+      courseOrder: fm.courseOrder,
+      chapter: fm.chapter,
+      seriesOrder: fm.seriesOrder,
+      difficulty: fm.difficulty,
+      codeLines: fm.codeLines,
       content: parsed.content,
     };
   });
@@ -54,9 +74,19 @@ export function getArticleBySlug(slug: string): Article | undefined {
   return getAllArticles().find((a) => a.slug === slug);
 }
 
+export function getRegularArticles(): Article[] {
+  return getAllArticles().filter((article) => article.kind !== "tutorial");
+}
+
+export function getSeriesArticles(seriesSlug: string): Article[] {
+  return getAllArticles()
+    .filter((article) => article.seriesSlug === seriesSlug)
+    .sort((a, b) => (a.seriesOrder ?? 0) - (b.seriesOrder ?? 0));
+}
+
 export function getAllTags(): string[] {
   const set = new Set<string>();
-  getAllArticles().forEach((a) => set.add(a.tag));
+  getRegularArticles().forEach((a) => set.add(a.tag));
   return ["全部", ...Array.from(set)];
 }
 

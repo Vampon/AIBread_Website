@@ -11,6 +11,7 @@ const QR_URL =
 export function FloatingWechat() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  if (pathname === "/") return null;
 
   // 关卡页右下角已经被进度栏占用，避免互相遮挡
   if (pathname?.startsWith("/learn/") && pathname !== "/learn") return null;

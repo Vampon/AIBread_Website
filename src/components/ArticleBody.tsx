@@ -9,6 +9,7 @@ export function ArticleBody({ content }: { content: string }) {
     <div className="article-prose">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        urlTransform={(url) => url}
         rehypePlugins={[
           rehypeSlug,
           [

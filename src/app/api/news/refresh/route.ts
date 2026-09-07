@@ -14,10 +14,16 @@ export async function GET(request: Request) {
 
   revalidateTag(NEWS_CACHE_TAG);
   const bundle = await getNewsBundle();
+  const bySource = bundle.items.reduce<Record<string, number>>((counts, item) => {
+    counts[item.source] = (counts[item.source] ?? 0) + 1;
+    return counts;
+  }, {});
   return NextResponse.json({
     ok: true,
     generatedAt: bundle.generatedAt,
     count: bundle.items.length,
+    chineseCount: bundle.items.filter((item) => item.lang === "zh").length,
+    bySource,
     failed: bundle.failedSources,
   });
 }

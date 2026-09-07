@@ -7,6 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const links = [
   { label: "作品", href: "/work" },
+  { label: "AI 学习", href: "/ai-learn" },
   { label: "博客", href: "/blog" },
   { label: "AI 消息站", href: "/news" },
   { label: "学习资源", href: "/resources" },
@@ -15,8 +16,10 @@ const links = [
 
 export function Footer() {
   const pathname = usePathname();
+  if (pathname === "/") return null;
   if (pathname?.startsWith("/learn/") && pathname !== "/learn") return null;
   if (pathname?.startsWith("/blog/")) return null;
+  if (pathname?.startsWith("/ai-learn/") && pathname.split("/").filter(Boolean).length >= 3) return null;
 
   return (
     <footer className="mt-20 border-t border-bread-900/10 bg-bread-900 text-white">

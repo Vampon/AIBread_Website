@@ -1,0 +1,235 @@
+{
+  "generatedAt": "2026-09-06T14:59:33.027Z",
+  "mode": "write",
+  "sourceRoot": "D:\\商业\\自媒体板块\\公众号文章",
+  "counts": {
+    "markdownFound": 1425,
+    "selectedRevisions": 24,
+    "duplicateRevisions": 0,
+    "imported": 24,
+    "skippedExisting": 0,
+    "excluded": 1401,
+    "copiedImages": 0,
+    "missingImages": 0
+  },
+  "imported": [
+    {
+      "title": "什么是上下文窗口？为什么ChatGPT\"记不住\"太长的对话？",
+      "slug": "ai-basics-chatgpt-9ebabf7",
+      "tag": "AI 基础",
+      "date": "2026-06-13",
+      "readMin": 6,
+      "source": "1-AI认知/什么是上下文窗口/什么是上下文窗口.md",
+      "target": "content/articles/ai-basics-chatgpt-9ebabf7.md"
+    },
+    {
+      "title": "什么是Embedding？AI\"理解\"世界的方式，是给每个东西一个坐标",
+      "slug": "ai-basics-embedding-ai-add0ba8",
+      "tag": "AI 基础",
+      "date": "2026-06-13",
+      "readMin": 7,
+      "source": "1-AI认知/什么是Embedding/什么是Embedding.md",
+      "target": "content/articles/ai-basics-embedding-ai-add0ba8.md"
+    },
+    {
+      "title": "为什么AI必须跑在显卡上？那个让英伟达值万亿的CUDA又是什么？",
+      "slug": "ai-basics-ai-cuda-2ddfe77",
+      "tag": "AI 基础",
+      "date": "2026-05-26",
+      "readMin": 5,
+      "source": "1-AI认知/为什么AI必须跑在显卡上/为什么AI必须跑在显卡上.md",
+      "target": "content/articles/ai-basics-ai-cuda-2ddfe77.md"
+    },
+    {
+      "title": "AI为什么会\"胡说八道\"？聊聊大模型的幻觉问题",
+      "slug": "ai-basics-ai-9600207",
+      "tag": "AI 基础",
+      "date": "2026-05-27",
+      "readMin": 4,
+      "source": "1-AI认知/AI为什么会胡说八道/AI为什么会胡说八道.md",
+      "target": "content/articles/ai-basics-ai-9600207.md"
+    },
+    {
+      "title": "AI学会\"思考\"了？推理模型到底是怎么回事",
+      "slug": "ai-basics-ai-19734d9",
+      "tag": "AI 基础",
+      "date": "2026-05-27",
+      "readMin": 4,
+      "source": "1-AI认知/AI学会思考了推理模型是怎么回事/AI学会思考了推理模型是怎么回事.md",
+      "target": "content/articles/ai-basics-ai-19734d9.md"
+    },
+    {
+      "title": "AI 时代的 MVP：怎么用 1 天验证一个想法",
+      "slug": "ai-business-ai-mvp-5583f92",
+      "tag": "AI 商业",
+      "date": "2026-06-23",
+      "readMin": 2,
+      "source": "15-AI变现/03-AI时代MVP.md",
+      "target": "content/articles/ai-business-ai-mvp-5583f92.md"
+    },
+    {
+      "title": "用Claude Code做你的第一个项目",
+      "slug": "claude-code-claude-code-0349bad",
+      "tag": "Claude Code",
+      "date": "2026-04-16",
+      "readMin": 6,
+      "source": "3-Claude code系列/文章/03_做你的第一个项目.md",
+      "target": "content/articles/claude-code-claude-code-0349bad.md"
+    },
+    {
+      "title": "10分钟装好Claude Code，说第一句话",
+      "slug": "claude-code-10-claude-code-6f88e3d",
+      "tag": "Claude Code",
+      "date": "2026-04-23",
+      "readMin": 7,
+      "source": "3-Claude code系列/重写/02_10分钟装好Claude Code，说第一句话.md",
+      "target": "content/articles/claude-code-10-claude-code-6f88e3d.md"
+    },
+    {
+      "title": "AI编程三年变了三次，Claude Code凭什么不一样？",
+      "slug": "claude-code-ai-claude-code-0e570ff",
+      "tag": "Claude Code",
+      "date": "2026-04-22",
+      "readMin": 7,
+      "source": "3-Claude code系列/重写/AI编程三年变了三次，Claude Code凭什么不一样？.md",
+      "target": "content/articles/claude-code-ai-claude-code-0e570ff.md"
+    },
+    {
+      "title": "CLAUDE.md 完全指南：让 Claude 真正\"懂\"你的项目",
+      "slug": "claude-code-claude-md-claude-000de96",
+      "tag": "Claude Code",
+      "date": "2026-06-06",
+      "readMin": 9,
+      "source": "3-Claude code系列/最佳实现/文章/02-CLAUDE-md完全指南.md",
+      "target": "content/articles/claude-code-claude-md-claude-000de96.md"
+    },
+    {
+      "title": "Claude Skills 揭秘：让 AI 自动触发你的能力",
+      "slug": "claude-code-claude-skills-ai-aecbde2",
+      "tag": "Claude Code",
+      "date": "2026-06-06",
+      "readMin": 11,
+      "source": "3-Claude code系列/最佳实现/文章/05-Skills揭秘.md",
+      "target": "content/articles/claude-code-claude-skills-ai-aecbde2.md"
+    },
+    {
+      "title": "Vercel：前端部署为什么能\"推代码即上线\"？",
+      "slug": "tech-vercel-1a3c287",
+      "tag": "技术词典",
+      "date": "2026-06-02",
+      "readMin": 7,
+      "source": "4-技术栈认知/42-Vercel是什么.md",
+      "target": "content/articles/tech-vercel-1a3c287.md"
+    },
+    {
+      "title": "AI Agent：当大模型不只是\"聊天\"，而是\"干活\"",
+      "slug": "agent-ai-agent-3ea6f0a",
+      "tag": "AI Agent",
+      "date": "2026-06-02",
+      "readMin": 4,
+      "source": "5-Agent/01-AI Agent是什么.md",
+      "target": "content/articles/agent-ai-agent-3ea6f0a.md"
+    },
+    {
+      "title": "Function Calling：Tool 的底层实现机制",
+      "slug": "agent-function-calling-tool-406d819",
+      "tag": "AI Agent",
+      "date": "2026-06-02",
+      "readMin": 4,
+      "source": "5-Agent/05-Function Calling.md",
+      "target": "content/articles/agent-function-calling-tool-406d819.md"
+    },
+    {
+      "title": "MCP：让 Agent 能接\"任何工具\"的通用协议",
+      "slug": "agent-mcp-agent-79a98be",
+      "tag": "AI Agent",
+      "date": "2026-06-02",
+      "readMin": 4,
+      "source": "5-Agent/06-MCP是什么.md",
+      "target": "content/articles/agent-mcp-agent-79a98be.md"
+    },
+    {
+      "title": "一个人 + AI = 一个团队：独立开发者的黄金时代",
+      "slug": "product-ai-4fc1c87",
+      "tag": "AI 产品",
+      "date": "2026-06-02",
+      "readMin": 4,
+      "source": "6-AI产品思维/01-一个人加AI等于一个团队.md",
+      "target": "content/articles/product-ai-4fc1c87.md"
+    },
+    {
+      "title": "AI 产品的核心不是模型，是工作流设计",
+      "slug": "product-ai-efb3fa8",
+      "tag": "AI 产品",
+      "date": "2026-06-02",
+      "readMin": 3,
+      "source": "6-AI产品思维/02-AI产品核心是工作流.md",
+      "target": "content/articles/product-ai-efb3fa8.md"
+    },
+    {
+      "title": "从想法到上线：一个 AI 产品的完整诞生过程",
+      "slug": "product-ai-e32ad46",
+      "tag": "AI 产品",
+      "date": "2026-06-02",
+      "readMin": 4,
+      "source": "6-AI产品思维/05-从想法到上线.md",
+      "target": "content/articles/product-ai-e32ad46.md"
+    },
+    {
+      "title": "实战项目一：用 AI 搭一个个人博客（Next.js + Markdown）",
+      "slug": "coding-ai-next-js-markdown-cc784e9",
+      "tag": "AI 编程",
+      "date": "2026-06-02",
+      "readMin": 5,
+      "source": "7-AI编程实战项目/01-用AI搭个人博客.md",
+      "target": "content/articles/coding-ai-next-js-markdown-cc784e9.md"
+    },
+    {
+      "title": "实战项目四：用 AI 做一个 Chrome 插件（划词翻译 + AI 总结）",
+      "slug": "coding-ai-chrome-ai-74b125a",
+      "tag": "AI 编程",
+      "date": "2026-06-02",
+      "readMin": 3,
+      "source": "7-AI编程实战项目/04-用AI做Chrome插件.md",
+      "target": "content/articles/coding-ai-chrome-ai-74b125a.md"
+    },
+    {
+      "title": "Vibe Coding 到底是个啥？为什么 2026 年人人都该会一点",
+      "slug": "vibe-coding-vibe-coding-2026-5a13288",
+      "tag": "Vibe Coding",
+      "date": "2026-06-06",
+      "readMin": 8,
+      "source": "8-VibeCoding指南/01-Vibe Coding到底是个啥.md",
+      "target": "content/articles/vibe-coding-vibe-coding-2026-5a13288.md"
+    },
+    {
+      "title": "规划就是一切：把想法变成 AI 能听懂的\"上下文包\"",
+      "slug": "vibe-coding-ai-a70eb5c",
+      "tag": "Vibe Coding",
+      "date": "2026-06-06",
+      "readMin": 9,
+      "source": "8-VibeCoding指南/03-规划就是一切.md",
+      "target": "content/articles/vibe-coding-ai-a70eb5c.md"
+    },
+    {
+      "title": "从玩具到上线：MVP 部署、安全与\"AI 写的代码能用吗\"",
+      "slug": "vibe-coding-mvp-ai-7e41f98",
+      "tag": "Vibe Coding",
+      "date": "2026-06-06",
+      "readMin": 10,
+      "source": "8-VibeCoding指南/08-从玩具到上线.md",
+      "target": "content/articles/vibe-coding-mvp-ai-7e41f98.md"
+    },
+    {
+      "title": "OpenClaw教程08：内容创作者工作流，选题、资料、初稿、审稿、发布检查",
+      "slug": "openclaw-openclaw-08-380831b",
+      "tag": "OpenClaw",
+      "date": "2026-06-10",
+      "readMin": 8,
+      "source": "9-OpenClaw教程/08-内容创作者工作流.md",
+      "target": "content/articles/openclaw-openclaw-08-380831b.md"
+    }
+  ],
+  "skippedExisting": [],
+  "missingImages": []
+}

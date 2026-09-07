@@ -97,6 +97,9 @@
   .article-prose hr {
     @apply my-10 border-t border-bread-100;
   }
+  .article-prose img {
+    @apply my-6 h-auto max-w-full border border-bread-900/10 bg-white p-1 shadow-soft;
+  }
   .surface-card {
     @apply rounded-2xl border border-bread-900/10 bg-white/90 shadow-soft backdrop-blur-sm;
   }

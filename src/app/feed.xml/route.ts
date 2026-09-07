@@ -1,4 +1,4 @@
-import { getAllArticles } from "@/lib/articles";
+import { getRegularArticles } from "@/lib/articles";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aibread.example";
 const SITE_NAME = "AI面包君";
@@ -14,7 +14,7 @@ function escapeXml(s: string): string {
 }
 
 export async function GET() {
-  const articles = getAllArticles();
+  const articles = getRegularArticles();
   const lastBuild = articles[0]?.date
     ? new Date(articles[0].date).toUTCString()
     : new Date().toUTCString();
